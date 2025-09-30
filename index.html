@@ -1,98 +1,203 @@
-<!DOCTYPE html>
-<head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-<style>
- body{
-  font-family: "Shadows Into Light", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+<Doctype html>
+<html lang ="en">
+  <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <meta name="description" content="Personal Portfolio of joseph"/>
+ <title>Joseph - Portfolio</title>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-</style>
+
+ <style>
+   /* Reset & Font */
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   body {
+     font-family: 'Inter', sans-serif;
+     line-height: 1.6;
+     background-color: #f4f4f4;
+     color: #333;
+   }
+
+
+   /* General Centering */
+   .center-section {
+     text-align: center;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 60px 20px;
+   }
+   .center-horizontal {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+   }
+
+
+   /* Navbar */
+   .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #222;
+     padding: 20px 0;
+     color: #fff;
+   }
+   .logo {
+     font-size: 1.5rem;
+     font-weight: bold;
+   }
+   .nav-links {
+     list-style: none;
+     display: flex;
+     gap: 20px;
+   }
+   .nav-links a {
+     color: #fff;
+     text-decoration: none;
+     font-weight: 600;
+   }
+   .nav-links a:hover {
+     color: #ffcc00;
+   }
+
+
+   /* Buttons */
+   .btn {
+     display: inline-block;
+     margin-top: 20px;
+     padding: 10px 25px;
+     background-color: #222;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 5px;
+     font-weight: bold;
+   }
+   .btn:hover {
+     background-color: #444;
+   }
+
+
+   /* Images */
+   .profile-pic {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     object-fit: cover;
+     margin-bottom: 20px;
+   }
+   .project-image {
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+     margin-bottom: 15px;
+   }
+
+
+   /* Project Grid */
+   .project-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 30px;
+     margin-top: 40px;
+   }
+   .project {
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+     text-align: center;
+   }
+   .project h3 {
+     margin: 15px 0 10px;
+   }
+   .project p {
+     font-size: 0.95rem;
+     color: #555;
+   }
+   .project a {
+     display: inline-block;
+     margin-top: 10px;
+     color: #007BFF;
+     text-decoration: none;
+     font-weight: bold;
+   }
+   .project a:hover {
+     text-decoration: underline;
+   }
+
+
+   /* Footer */
+   footer {
+     margin-top: 40px;
+     font-size: 0.9rem;
+     color: #777;
+   }
+ </style>
 </head>
+
 <body>
-<div id="leftside"style="float: left;">
-    <img src="Picture1.webp" alt=""height="400px">
-</div>
+  <header>
+    <nav class="navbar center-horizontal">
+      <div class="logo">Joseph</div>
+      <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#project">project</a></li>
+      <li><a href="#project">project</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div id="rightside"style="float: left;">
-    <Strong>Ingredients</Strong>
-    <br>
-
-    <p>
-    <strong>Specialty Lattes</strong>
-    </p>
-    Fresh, organic Ingredients
-    <br>
-    Made from scratch.
-    </p>
-
-
-    We use real organic madagascar Vanilla
-    <br>
-    vanilla beans and whip our
-    <br>
-    homemode cream fresh throughout
-
-    <br>
-    the day
-
-    <br>
-    <Strong>Matcha</Strong>
-    <br>
-    <p>
-    Ceremonial-grade matcha from
-    <br>
-    Yame, Japan
-    </p>
-
-    </p>
-    Fresh, organic Ingredients
-    <br>
-    Made from scratch.
-    </p>
-
-
-
-    <strong>Teas</strong>
-    <p>Curating finest teas from france and Korea.
-        <br>
-        Every Ingredients reflects our commitment
-
-    </p>
-
-    <p>To excellence
-        <br>
-
-
-</div>
-
-
-<br style="clear: both;"/>
-
-<div id="leftside_2"style="float:left;">
-    <strong>Expanded Parking</strong>
-    <p>we now offer two parking lots
-    <br>
-    <p>Lot1
-    </p>
-    </br>seesaw lot-right besides cafe
-    </p>
-    <br>Lot2
-    </p>
-    <p>
-    Nolza lot-across right besides the alley way of nolza (8am - 4pm)
-    </p>
-</div>
-
-<div id="rightside_2"style="float: left;">
-    <img src="Picture2.webp" alt=""height="400px">
-</div>
-<br style="clear: both;"/>
-
-
-
-
+<section id="hero" class="center-section">
+<img src="WIN_20181125_20_13_29_Pro.jpg" alt="Your Profile Picture" class="profile-pic"/>
+<h1> Hello, I'm new to visual studio code, and I'm Joseph </h1>
+<p> A passionate [Food photographer / </p>
+<a herf="#projects" class="btn">to see more.</a>
+</section>
 </body>
+
+</html>
+
+<section id="about" class="center-section">
+    <h2>About Me</h2>
+    <p>
+    I'm a lifestyle Instagram food photographer who enjoys cook, taking food to go, and to travel world to try out international food!
+    </p>
+    </section>
+
+    <section id="projects" class="center-section">
+    <h2></h2>
+      <div class="project-grid">
+        <div class="project">
+        <img src="feb-2025-kmd-king-salmon-roll.jpg" alt="project 1" class="project-image"/>
+        <h3>Salmon</h3>
+      <p>?</p>
+      <a herf="#">view Project</a>
+    </div>    
+        <div class="project">
+        <img src="5_Dragonroll_Wasabi_ichiran (1).jpg" alt="project 1" class="project-image"/>
+        <h3>Dragnon Roll</h3>
+      <p>?</p>
+      <a herf="#">view Project</a>
+    </div>
+        <div class="project">
+        <img src="C:\Users\Dell\Downloads\Perrsonal Website\캡처 Capture 1.PNG" alt="project 1" class="project-image"/>
+        <h3>Cherry Blossom Sushi Roll</h3>
+      <p>?</p>
+    <a herf="#">view Project</a>
+    </div>
+  </div>
+  <section id="contact" class="center-section"></section>
+  <h2>Contact</h2>
+  <p>Reach out via email or follow me on Social media</p>
+  <ul>
+  <li>Email: <a href="mailto:josephnoce227@gmail.com">josephnoce227@gmail.com</a> </li>
+  <li>github: <a href="josephnoce227-arch.github.io">josephnoce227-arch.github.io</a> </li>
+  <li>Video: <a href="https://www.youtube.com/watch?v=3sWovLoeDaI">How to cut Avocado / Tuttorial</a> </li>
+  </ul> 
+    <body>
+    
+    <html>
